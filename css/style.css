@@ -1,7 +1,7 @@
 :root {
   --header-bg: #2c3e50;
   --main-bg: #1abc9c;
-  --footer-bg: #3a546d;
+  --footer-top-bg: #3a546d;
   --footer-bottom-bg: #2c3e50;
   --text-color: #ffffff;
 }
@@ -56,4 +56,32 @@ header {
 #portfolio img {
   width: 100%;
   border-radius: 8px;
+}
+
+/* ABOUT */
+
+#about {
+  background-color: var(--main-bg);
+  height: 50vh;
+  width: 100%;
+}
+
+/* CONTACT */
+
+#contact {
+  background-color: var(--text-color);
+  border: 5px dashed black;
+  height: 70vh;
+  width: 100%;
+}
+
+/* FOOTER */
+#footer .footer-top {
+  background-color: var(--footer-top-bg);
+  height: 30vh;
+}
+
+#footer .footer-bottom {
+  background-color: var(--footer-bottom-bg);
+  height: 10vh;
 }
