@@ -131,7 +131,7 @@
 			<!-- contact -->
 			<section id="contact">
 				<div class="container w-75 p-5">
-					<div class="row align-items-center px-5">
+					<div class="row align-items-center justify-content-center px-5">
 						<div class="col-12">
 							<h2 class="h1 text-center display-5 fw-bold">CONTACT ME</h2>
 						</div>
@@ -141,25 +141,22 @@
 						</div>
 
 						<div class="col-12">
-							<form>
-								<fieldset>
-									<div class="mb-3">
-										<input type="text" id="name" class="form-control border-0 border-bottom border-secondary border-opacity-25 rounded-0" placeholder="Nome">
-									</div>
-									<div class="mb-3">
-										<input type="text" id="email" class="form-control border-0 border-bottom border-secondary border-opacity-25 rounded-0" placeholder="Email Address">
-									</div>
-									<div class="mb-3">
-										<input type="text" id="number" class="form-control border-0 border-bottom border-secondary border-opacity-25 rounded-0" placeholder="Phone Number">
-									</div>
-									<div class="mb-3">										
-										<textarea class="form-control border-0 border-bottom border-secondary border-opacity-25 rounded-0" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-									</div>
-									<div class="mb-3">
-										<button type="submit" class="btn">Send</button>
-									</div>
-								</fieldset>
-								
+							<form>								
+								<div class="mb-3">
+									<input type="text" name="name" id="name" class="form-control border-0 border-bottom border-secondary border-opacity-25 rounded-0" placeholder="Nome" required>
+								</div>
+								<div class="mb-3">
+									<input type="email" name="email" id="email" class="form-control border-0 border-bottom border-secondary border-opacity-25 rounded-0" placeholder="Email Address" required>
+								</div>
+								<div class="mb-3">
+									<input type="tel" name="phone" id="phone" class="form-control border-0 border-bottom border-secondary border-opacity-25 rounded-0" placeholder="Phone Number" required>
+								</div>
+								<div class="mb-3">										
+									<textarea class="form-control border-0 border-bottom border-secondary border-opacity-25 rounded-0" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+								</div>
+								<div class="mb-3">
+									<button type="submit" class="btn">Send</button>
+								</div>
 							</form>
 						</div>
 					</div>
@@ -173,27 +170,27 @@
 	<footer id="footer">
 			<!-- footer top -->
 			<div class="footer-top text-center py-5">
-				<div class="container">
+				<div class="container w-75">
 					<div class="row">
-						<div class="col-12 col-md-6 col-lg-4">
-							<h5>LOCATION</h5>
+						<div class="col-12 col-md-4">
+							<h4 class="h4">LOCATION</h4>
 							<p class="fs-5">2215 John Daniel Drive Clark, MO
 								54243</p>
 						</div>
 
 						<div class="col-12 col-md-4 ">
-							<h5>AROUND THE WEB</h5>
-							<div class="social">
-								<i class="fa-brands fa-facebook-f"></i>
-								<i class="fa-brands fa-google-plus-g"></i>
-								<i class="fa-brands fa-twitter"></i>
-								<i class="fa-brands fa-linkedin-in"></i>
+							<h4 class="h4">AROUND THE WEB</h4>
+							<div class="col-12 social d-flex justify-content-center align-items-center gap-2 mb-4">
+								<div class="col-12 footer-icon d-flex justify-content-center align-items-center"><i class="fa-brands fa-facebook-f"></i></div>
+								<div class="col-12 footer-icon d-flex justify-content-center align-items-center"><i class="fa-brands fa-google-plus-g align-middle"></i></div>
+								<div class="col-12 footer-icon d-flex justify-content-center align-items-center"><i class="fa-brands fa-twitter"></i></div>
+								<div class="col-12 footer-icon d-flex justify-content-center align-items-center"><i class="fa-brands fa-linkedin-in"></i></div>						
 							</div>
-						</div>
-							
+						</div>	
+
 						<div class="col-12 col-md-4 ">
-							<h5>ABOUT FREELANCER</h5>
-							<p class="fs-5">Freelance is a free to use, open source
+							<h4 class="h4">ABOUT FREELANCER</h4>
+							<p class="fs-5 mb-0">Freelance is a free to use, open source
 							Bootstrap theme created by <a href="#" class="text-decoration-none">Start
 							Bootstrap.</a></p>					
 						</div>
@@ -206,7 +203,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<p class="fs-6 text-center">Copyright © Your Website 2019</p>
+							<p class="text-center">Copyright © Your Website 2019</p>
 						</div>
 					</div>
 				</div>

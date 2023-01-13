@@ -112,6 +112,13 @@ header {
   color: var(--text-color);
 }
 
+.footer-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
 .w-75 {
   width: 75%;
 }
