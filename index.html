@@ -19,7 +19,7 @@
 <body>
 	<!-- header -->
 	<header class="py-3 position-sticky">
-		<nav class="navbar navbar-expand-lg">
+		<nav class="navbar navbar-expand-md">
 			<div class="container">
 				<a class="navbar-brand" href="#">START BOOTSTRAP</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,13 +29,13 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#">PORTFOLIO</a>
+							<a class="nav-link" aria-current="page" href="#portfolio">PORTFOLIO</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">ABOUT</a>
+							<a class="nav-link" href="#about">ABOUT</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">CONTACT</a>
+							<a class="nav-link" href="#contact">CONTACT</a>
 						</li>						
 					</ul>					
 				</div>
@@ -49,23 +49,32 @@
 			<!-- jumbotron -->
 		<section id="jumbotron" >
 			<div class="container">
-				<div class="row star-bootstrap d-flex justify-content-center">
-					<div class="pfofile-img col-12">
+				<div class="row align-items-center g-2 py-5">
+					<div class="pfofile-img col-12 text-center">
 						<img src="./img/avatar.svg" alt="avatar">
-						<h1 >START BOOTSTRAP</h1>
-						<span class="white-star"><i class="fa-solid fa-star mb-3 star"></i></span>
-						<h2>GRAFIC SRTIST - WEB DESIGNER - ILLUSTATOR</h2>
+						<h1 class="h1 display-4 fw-bold lh-lg">START BOOTSTRAP</h1>						
 					</div>
+					
+					<div class="col-12 white-star text-center mb-4">
+						<i class="fa-solid fa-star fs-3 align-middle"></i>
+					</div>
+
+					<div class="col-12">
+						<h3 class="h3 fs-4 text-center">GRAFIC SRTIST - WEB DESIGNER - ILLUSTATOR</h3>											
+					</div>
+						
 				</div>
 			</div>
 		</section>
 			<!-- /jumbotron -->
 
 			<!-- portfolio -->
-		<section id="portfolio">
-			<div class="container">
-				<h2>PORTFOLIO</h2>
-				<span class="black-star"></span>
+		<section id="portfolio" class="my-5">
+			<div class="container py-4">
+				<h2 class="h2 text-center display-5 fw-bold">PORTFOLIO</h2>
+				<div class="col-12 black-star text-center my-4">
+					<i class="fa-solid fa-star fs-3 align-middle"></i>
+				</div>
 				<div class="row g-4">				
 				<div class="col-12 col-md-6 col-lg-4">
 					<img src="./img/cabin.png" alt="">
@@ -90,14 +99,71 @@
 			<!-- /portfolio -->
 
 			<!-- about -->
-		<section id="about">
+		<section id="about" class="p-5">
+			<div class="container w-75">
+				<div class="row align-items-center px-3">
+					<div class="col-12">
+						<h2 class="h1 text-center display-5 fw-bold">ABOUT</h2>
+					</div>
 
+					<div class="col-12 white-star text-center my-4">
+						<i class="fa-solid fa-star fs-3 align-middle"></i>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-6 mb-5">
+						<p class="lh-base fs-5">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy costumization.</p>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-6 mb-5">
+						<p class="lh-base fs-5">Whether you're a student looking to showcase you work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+					</div>	
+					
+					<div class="col text-center">
+						<button type="button" class="btn btn-outline-light btn-lg "><i class="fa-sharp fa-solid fa-download me-2"></i>Download</button>
+					</div>
+					
+				</div>		
+				
+			</div>
 		</section>
 			<!-- /about -->
 
 			<!-- contact -->
 			<section id="contact">
+				<div class="container w-75 p-5">
+					<div class="row align-items-center px-5">
+						<div class="col-12">
+							<h2 class="h1 text-center display-5 fw-bold">CONTACT ME</h2>
+						</div>
+	
+						<div class="col-12 black-star text-center my-4">
+							<i class="fa-solid fa-star fs-3 align-middle"></i>
+						</div>
 
+						<div class="col-12">
+							<form>
+								<fieldset>
+									<div class="mb-3">
+										<input type="text" id="name" class="form-control border-0 border-bottom border-secondary border-opacity-25 rounded-0" placeholder="Nome">
+									</div>
+									<div class="mb-3">
+										<input type="text" id="email" class="form-control border-0 border-bottom border-secondary border-opacity-25 rounded-0" placeholder="Email Address">
+									</div>
+									<div class="mb-3">
+										<input type="text" id="number" class="form-control border-0 border-bottom border-secondary border-opacity-25 rounded-0" placeholder="Phone Number">
+									</div>
+									<div class="mb-3">										
+										<textarea class="form-control border-0 border-bottom border-secondary border-opacity-25 rounded-0" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+									</div>
+									<div class="mb-3">
+										<button type="submit" class="btn">Send</button>
+									</div>
+								</fieldset>
+								
+							</form>
+						</div>
+					</div>
+				</div>
 			</section>
 			<!-- /contact -->
 			</main>
@@ -106,23 +172,42 @@
 	<!-- footer -->
 	<footer id="footer">
 			<!-- footer top -->
-			<div class="footer-top">
+			<div class="footer-top text-center py-5">
 				<div class="container">
 					<div class="row">
-						<div class="col-12 col-md-6 col-lg-4"></div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<h5>LOCATION</h5>
+							<p class="fs-5">2215 John Daniel Drive Clark, MO
+								54243</p>
+						</div>
 
-						<div class="col-12 col-md-6 col-lg-4"></div>
-			
-						<div class="col-12 col-md-6 col-lg-4"></div>
+						<div class="col-12 col-md-4 ">
+							<h5>AROUND THE WEB</h5>
+							<div class="social">
+								<i class="fa-brands fa-facebook-f"></i>
+								<i class="fa-brands fa-google-plus-g"></i>
+								<i class="fa-brands fa-twitter"></i>
+								<i class="fa-brands fa-linkedin-in"></i>
+							</div>
+						</div>
+							
+						<div class="col-12 col-md-4 ">
+							<h5>ABOUT FREELANCER</h5>
+							<p class="fs-5">Freelance is a free to use, open source
+							Bootstrap theme created by <a href="#" class="text-decoration-none">Start
+							Bootstrap.</a></p>					
+						</div>
 					</div>
-				</div>	
-			</div>
-			
-						<!-- footer bottom -->
-			<div class="footer-bottom">
+				</div>				
+			</div>	
+
+			<!-- footer bottom -->
+			<div class="footer-bottom py-5">
 				<div class="container">
 					<div class="row">
-						<div class="col-12"></div>
+						<div class="col-12">
+							<p class="fs-6 text-center">Copyright © Your Website 2019</p>
+						</div>
 					</div>
 				</div>
 			</div>	

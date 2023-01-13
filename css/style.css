@@ -36,21 +36,17 @@ header {
 
 /* JUMBOTRON */
 #jumbotron {
-  background-color: var(--main-bg); 
-  width: 100%;
-  height: 100vh; 
+  background-color: var(--main-bg);
+  color: var(--text-color)
 }
 
 #jumbotron img {
-  height: 20%;
+  width: 20%;
 }
 
 /* PORTFOLIO */
 #portfolio {
   background-color: var(--text-color); 
-  width: 100%;
-  height: 100vh; 
-  border: 1px solid bòack;
 }
 
 #portfolio img {
@@ -62,26 +58,60 @@ header {
 
 #about {
   background-color: var(--main-bg);
-  height: 50vh;
-  width: 100%;
+  color: var(--text-color);
+  margin-top: 50px;
 }
 
-/* CONTACT */
+.white-star::before, .white-star::after {
+  content: "";
+  width: 12%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px;
+}
+.black-star::before, .black-star::after {
+  content: "";
+  width: 12%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: black;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px;
+  
+}
+
+
+
+/* CONTACT ME*/
 
 #contact {
   background-color: var(--text-color);
-  border: 5px dashed black;
-  height: 70vh;
-  width: 100%;
+} 
+
+.btn{
+ background-color: var(--main-bg);
+ color: var(--text-color);
 }
 
 /* FOOTER */
 #footer .footer-top {
   background-color: var(--footer-top-bg);
-  height: 30vh;
+  color: var(--text-color);
+}
+#footer .footer-top a {
+  color: var(--main-bg);
 }
 
 #footer .footer-bottom {
   background-color: var(--footer-bottom-bg);
   height: 10vh;
+  color: var(--text-color);
+}
+
+.w-75 {
+  width: 75%;
 }
