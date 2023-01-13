@@ -25,6 +25,15 @@ header {
   color: var(--text-color);
 }
 
+.navbar-brand:focus, .navbar-brand:hover {
+  color: #d3c1af;
+}
+
+.navbar-nav a:hover{
+  transition: 1s;
+  transform: scale(1.1);
+}
+
 .navbar-toggler {
  border: 1px solid var(--text-color);
  color: var(--text-color);
